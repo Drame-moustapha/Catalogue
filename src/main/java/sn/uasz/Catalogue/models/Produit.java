@@ -20,7 +20,7 @@ public class Produit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private  String reference;
-    private String libelles;
+    private String libelle;
     private String codebarre;
 
     private Double montant;
