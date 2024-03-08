@@ -16,7 +16,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Data
 public class Depense {
-
+    //Ameliore le code
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
