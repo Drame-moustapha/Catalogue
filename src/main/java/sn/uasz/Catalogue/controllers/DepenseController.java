@@ -6,7 +6,7 @@ import sn.uasz.Catalogue.models.Depense;
 import sn.uasz.Catalogue.services.DepenseService;
 
 import java.util.List;
-
+//lis bien le code
 @RestController
 @RequestMapping("/api/catalogues")
 
