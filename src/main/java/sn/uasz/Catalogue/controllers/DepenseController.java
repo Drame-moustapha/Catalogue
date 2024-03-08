@@ -11,21 +11,18 @@ import java.util.List;
 @RequestMapping("/api/catalogues")
 
 public class DepenseController {
-
+    // Modifier cette partie pour le lien de la base de données
     @Autowired
     private DepenseService depenseService;
 
-
-
     @GetMapping("/depenses")
-    public List<Depense> listDepense(){
+    public List<Depense> listDepense() {
 
         return depenseService.getAllDepense();
     }
 
-
     @PostMapping("/depenses")
-    public Depense save(@RequestBody Depense depense){
+    public Depense save(@RequestBody Depense depense) {
         return depenseService.addDepense(depense);
     }
 
