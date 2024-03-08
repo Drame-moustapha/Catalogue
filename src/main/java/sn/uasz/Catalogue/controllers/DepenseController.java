@@ -6,6 +6,7 @@ import sn.uasz.Catalogue.models.Depense;
 import sn.uasz.Catalogue.services.DepenseService;
 
 import java.util.List;
+
 //lis bien le code
 @RestController
 @RequestMapping("/api/catalogues")
@@ -15,17 +16,15 @@ public class DepenseController {
     @Autowired
     private DepenseService depenseService;
 
-     //La 
-
+    // La méthode qui récupere les dépenses effectué
     @GetMapping("/depenses")
-    public List<Depense> listDepense(){
+    public List<Depense> listDepense() {
 
         return depenseService.getAllDepense();
     }
 
-
     @PostMapping("/depenses")
-    public Depense save(@RequestBody Depense depense){
+    public Depense save(@RequestBody Depense depense) {
         return depenseService.addDepense(depense);
     }
 
